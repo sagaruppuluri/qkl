@@ -1,0 +1,194 @@
+{
+	"id": "40aeed55-762c-d1c4-44cd-c0d81b71b2d3",
+	"name": "quickloan",
+	"description": "",
+	"order": [
+		"be6b67d8-68e0-65d8-1217-5e0b41ed3bb3",
+		"59221330-7dcf-4d81-e1c0-3cba23042671",
+		"1b72395c-fcf6-05bb-8756-f2a79adb3863",
+		"b6a64cf2-a304-fff2-70aa-9b2ba805e313",
+		"b5ec8c8f-1d28-6c35-c65f-816259bd75f7",
+		"1684e6aa-0c7e-3baf-98ae-ba06a6f8dd62"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1509771467355,
+	"owner": "3082882",
+	"public": false,
+	"requests": [
+		{
+			"id": "1684e6aa-0c7e-3baf-98ae-ba06a6f8dd62",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/quickloan/api/v1.0.0/loan/confirm/otp/authenticate",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "40aeed55-762c-d1c4-44cd-c0d81b71b2d3",
+			"data": [],
+			"dataMode": "raw",
+			"name": "LoanConfirmOTP",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1509897502773,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"aadhaarNo\" :\"1223\",\n\t\"otp\" : \"324234\"\n}"
+		},
+		{
+			"id": "1b72395c-fcf6-05bb-8756-f2a79adb3863",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/quickloan/api/v1.0.0/otp/authenticate/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "40aeed55-762c-d1c4-44cd-c0d81b71b2d3",
+			"data": [],
+			"dataMode": "raw",
+			"name": "OTPAuthenticate",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1509896191306,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"aadhaarNo\":\"12345\",\n\t\"otp\":\"12\"\n}"
+		},
+		{
+			"id": "59221330-7dcf-4d81-e1c0-3cba23042671",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/quickloan/api/v1.0.0/otp/generate/",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509896126347,
+			"name": "GenerateOTP",
+			"description": "",
+			"collectionId": "40aeed55-762c-d1c4-44cd-c0d81b71b2d3",
+			"responses": [],
+			"rawModeData": "{\n\t\"aadhaarNo\":\"12345\",\n\t\"acceptTerms\":true\n}"
+		},
+		{
+			"id": "b5ec8c8f-1d28-6c35-c65f-816259bd75f7",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/quickloan/api/v1.0.0/loan/confirm",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "40aeed55-762c-d1c4-44cd-c0d81b71b2d3",
+			"data": [],
+			"dataMode": "raw",
+			"name": "LoanConfirm",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1509897177931,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"aadhaarNo\": \"123\",\n\t\"loanAmount\": 100.23,\n\t\"tenure\": 12\n}"
+		},
+		{
+			"id": "b6a64cf2-a304-fff2-70aa-9b2ba805e313",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/quickloan/api/v1.0.0/customerInfo/get",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "40aeed55-762c-d1c4-44cd-c0d81b71b2d3",
+			"data": [],
+			"dataMode": "raw",
+			"name": "CustomerInfo",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1509896686437,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\"aadhaarNo\":\"32323\"\n}"
+		},
+		{
+			"id": "be6b67d8-68e0-65d8-1217-5e0b41ed3bb3",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/quickloan/ping",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509771993680,
+			"name": "PING",
+			"description": "",
+			"collectionId": "40aeed55-762c-d1c4-44cd-c0d81b71b2d3",
+			"responses": []
+		}
+	]
+}
