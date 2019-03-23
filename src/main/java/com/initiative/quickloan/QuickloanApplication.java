@@ -4,7 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
-// Test Comment 1 
+// Test Comment 3
+// Test Comment 1
 @SpringBootApplication
 @ComponentScan("com.initiative.quickloan.config")
 public class QuickloanApplication {
