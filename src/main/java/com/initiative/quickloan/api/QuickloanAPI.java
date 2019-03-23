@@ -18,6 +18,7 @@ import com.initiative.quickloan.api.model.LoanConfirmationResponse;
 import com.initiative.quickloan.api.model.OTPAuthenticateRequest;
 import com.initiative.quickloan.api.model.OTPAuthenticateResponse;
 
+// API Comment Added 1
 @RestController
 public class QuickloanAPI {
 	
