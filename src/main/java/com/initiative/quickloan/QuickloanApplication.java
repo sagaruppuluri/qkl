@@ -9,6 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
 // Test Comment 3
 // Test Comment 4
 // App Comment 2
+// App comment by master
 @SpringBootApplication
 @ComponentScan("com.initiative.quickloan.config")
 public class QuickloanApplication {
